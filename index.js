@@ -8,7 +8,7 @@ const config = {
   },
   searchEngineUrl: 'https://www.google.com',
   searchQuery: 'Litify',
-  litifyUrl: 'https://www.litify.com/',
+  url: 'https://www.litify.com/',
   screenshotPath: 'screenshot.png',
   element: {
     searchInput: 'input[name="q"]',
@@ -34,6 +34,6 @@ const { element, msg } = config;
   const firstResultHref = await page.$eval(element.firstResultLink, el => el.href); 
   await browser.close();
   console.log(`First result links to: ${firstResultHref}`);
-  const output = firstResultHref === config.litifyUrl ? msg.goodNews : msg.badNews;
+  const output = firstResultHref === config.url ? msg.goodNews : msg.badNews;
   console.info(output);
 })();
