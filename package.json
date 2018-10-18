@@ -1,0 +1,14 @@
+{
+  "name": "litify-first",
+  "version": "1.0.0",
+  "description": "a tool that we can run regularly that will test if litify.com is the first result when searching Google for “Litify”",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Cataldo",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.9.0"
+  }
+}
